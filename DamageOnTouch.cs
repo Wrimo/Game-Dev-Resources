@@ -8,9 +8,7 @@ public class DamageOnTouch : MonoBehaviour
     public bool IsBullet; 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent<AIAttack>() != null)
-        {
-
+     
             if (col.gameObject.GetComponent<Team>().TeamNum != gameObject.GetComponent<Team>().TeamNum)
             {
                 col.gameObject.GetComponent<Health>().Damage(Damage); 
@@ -19,6 +17,6 @@ public class DamageOnTouch : MonoBehaviour
                     GameObject.Destroy(this.gameObject);
                 }
             }
-        }
+        
     }
 }

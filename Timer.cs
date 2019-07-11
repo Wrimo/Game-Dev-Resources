@@ -35,6 +35,11 @@ public class Timer
             return false;
         }
     }
+    
+    public void TimerIncrement()
+    {
+        CurrentCount += Increment; 
+    }
 
     public void ResetTimer()
     {

@@ -42,8 +42,4 @@ public class Bullet : MonoBehaviour
     {
         GameObject.Destroy(this.gameObject);
     }
-    public float AngleDir(Vector3 A, Vector3 B)
-    {
-        return -A.x * B.y + A.y * B.x;
-    }
 }
